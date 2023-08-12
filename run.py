@@ -9,7 +9,8 @@ CORS(app)
 app.app_context().push()
 
 db = SQLAlchemy()
-app.config["SQLALCHEMY_DATABASE_URI"] = "postgresql://jlmunnoz_todolist:gvC9HuY5p6rqEATHBsDe07ygfLjxj6Iy@dpg-cjap9gbbq8nc73cdu1sg-a.oregon-postgres.render.com/db_todolist_5cbi"
+# app.config["SQLALCHEMY_DATABASE_URI"] = "postgresql://jlmunnoz_todolist:gvC9HuY5p6rqEATHBsDe07ygfLjxj6Iy@dpg-cjap9gbbq8nc73cdu1sg-a.oregon-postgres.render.com/db_todolist_5cbi"
+app.config["SQLALCHEMY_DATABASE_URI"] = "postgresql://jlmunnoz_todolist:gvC9HuY5p6rqEATHBsDe07ygfLjxj6Iy@dpg-cjap9gbbq8nc73cdu1sg-a/db_todolist_5cbi"
 db.init_app(app)
 
 class Tarea(db.Model):
